@@ -81,7 +81,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="font-display text-xl font-light tracking-widest uppercase text-foreground">
-            Фуршет
+            Буфет
           </span>
           <div className="hidden md:flex items-center gap-8">
             {[
@@ -405,7 +405,7 @@ export default function Index() {
       <footer className="py-10 border-t border-border">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="font-display text-lg font-light tracking-widest uppercase text-foreground">
-            Фуршет
+            Буфет
           </span>
           <div className="flex items-center gap-6 text-xs text-muted-foreground tracking-wider">
             <span>+7 (495) 000-00-00</span>
