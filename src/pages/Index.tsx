@@ -163,9 +163,8 @@ export default function Index() {
               большего
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-10 max-w-md opacity-0-init animate-fade-up delay-300">
-              Профессиональный фуршет для корпоративных мероприятий, свадеб и
-              частных праздников. Авторское меню, безупречная сервировка,
-              полное сопровождение.
+              Фуршет для корпоративных мероприятий, свадеб и
+              частных праздников. Авторское меню, безупречная сервировка.
             </p>
             <div className="flex flex-wrap gap-4 opacity-0-init animate-fade-up delay-400">
               <button className="px-8 py-3.5 bg-white text-foreground text-sm tracking-wider hover:opacity-90 transition-opacity duration-200">
