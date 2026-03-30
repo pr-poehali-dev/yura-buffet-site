@@ -147,31 +147,31 @@ export default function Index() {
             alt="Hero"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-background/78" />
+          <div className="absolute inset-0 bg-black/55" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-32">
           <div className="max-w-2xl">
-            <p className="text-sm tracking-[0.3em] uppercase text-foreground/70 font-medium mb-6 opacity-0-init animate-fade-up delay-100">
+            <p className="text-sm tracking-[0.3em] uppercase text-white/70 font-medium mb-6 opacity-0-init animate-fade-up delay-100">
               Изысканный фуршет
             </p>
-            <h1 className="font-display text-5xl md:text-7xl font-semibold leading-[1.1] text-foreground mb-8 opacity-0-init animate-fade-up delay-200">
+            <h1 className="font-display text-5xl md:text-7xl font-semibold leading-[1.1] text-white mb-8 opacity-0-init animate-fade-up delay-200">
               Каждый праздник
               <br />
               <em className="italic font-light">заслуживает</em>
               <br />
               большего
             </h1>
-            <p className="text-lg text-foreground/75 leading-relaxed mb-10 max-w-md opacity-0-init animate-fade-up delay-300">
+            <p className="text-lg text-white/80 leading-relaxed mb-10 max-w-md opacity-0-init animate-fade-up delay-300">
               Профессиональный фуршет для корпоративных мероприятий, свадеб и
               частных праздников. Авторское меню, безупречная сервировка,
               полное сопровождение.
             </p>
             <div className="flex flex-wrap gap-4 opacity-0-init animate-fade-up delay-400">
-              <button className="px-8 py-3.5 bg-foreground text-background text-sm tracking-wider hover:opacity-80 transition-opacity duration-200">
+              <button className="px-8 py-3.5 bg-white text-foreground text-sm tracking-wider hover:opacity-90 transition-opacity duration-200">
                 Рассчитать стоимость
               </button>
-              <button className="px-8 py-3.5 border border-foreground text-foreground text-sm tracking-wider hover:bg-foreground hover:text-background transition-all duration-300">
+              <button className="px-8 py-3.5 border border-white text-white text-sm tracking-wider hover:bg-white hover:text-foreground transition-all duration-300">
                 Смотреть меню
               </button>
             </div>
@@ -184,10 +184,10 @@ export default function Index() {
               { num: "98%", label: "довольных клиентов" },
             ].map(({ num, label }) => (
               <div key={label}>
-                <div className="font-display text-3xl font-semibold text-foreground">
+                <div className="font-display text-3xl font-semibold text-white">
                   {num}
                 </div>
-                <div className="text-sm tracking-wider text-foreground/65 mt-1 uppercase font-medium">
+                <div className="text-sm tracking-wider text-white/65 mt-1 uppercase font-medium">
                   {label}
                 </div>
               </div>
