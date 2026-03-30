@@ -3,24 +3,29 @@ import Icon from "@/components/ui/icon";
 
 const GALLERY_IMAGES = [
   {
-    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/files/69b42292-045f-49f5-b469-9defeb8231a5.jpg",
-    alt: "Изысканные канапе и закуски",
-    label: "Авторские канапе",
+    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/bucket/c883c5ff-3487-4e40-ab0d-a89206e8d8fe.jpeg",
+    alt: "Канапе ассорти",
+    label: "Канапе ассорти",
   },
   {
-    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/files/1fa58170-ed35-47e9-90a9-3c4d03f82ef8.jpg",
-    alt: "Сервировка стола",
-    label: "Элегантная сервировка",
+    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/bucket/4bdcf561-8329-4d0a-bbd9-e27fb8ccb9d9.jpeg",
+    alt: "Мини-тако",
+    label: "Мини-тако",
   },
   {
-    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/files/7dda40b3-89d8-4e55-9147-37d0277d2329.jpg",
-    alt: "Закуски и снеки",
-    label: "Сырная доска",
+    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/bucket/f2d8110d-e3a8-49e1-8775-d3bec8e28ed8.jpeg",
+    alt: "Закусочный бокс",
+    label: "Закусочный бокс",
   },
   {
-    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/files/9741003f-ecec-4f77-8df7-06962f9bf8c3.jpg",
-    alt: "Десерты и сладкое",
-    label: "Десертный стол",
+    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/bucket/95676424-e9bf-4ffe-af8a-d7aabed8a3b1.jpeg",
+    alt: "Праздничный буфет",
+    label: "Праздничный буфет",
+  },
+  {
+    src: "https://cdn.poehali.dev/projects/f0397fbb-8dd1-4820-8fbe-f4fdce4b4bef/bucket/405a099c-b30b-4fd0-950b-57f9d1f3c1a7.jpeg",
+    alt: "Большой фуршетный стол",
+    label: "Фуршетный стол",
   },
 ];
 
