@@ -97,7 +97,7 @@ export default function Index() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm tracking-wider text-muted-foreground hover:text-foreground transition-colors duration-200"
+                className="text-sm tracking-wider text-foreground/65 hover:text-foreground transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
@@ -123,7 +123,7 @@ export default function Index() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm tracking-wider text-muted-foreground"
+                className="text-sm tracking-wider text-foreground/65 font-medium"
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}
@@ -152,17 +152,17 @@ export default function Index() {
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-32">
           <div className="max-w-2xl">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6 opacity-0-init animate-fade-up delay-100">
+            <p className="text-sm tracking-[0.3em] uppercase text-foreground/70 font-medium mb-6 opacity-0-init animate-fade-up delay-100">
               Изысканный фуршет
             </p>
-            <h1 className="font-display text-5xl md:text-7xl font-light leading-[1.1] text-foreground mb-8 opacity-0-init animate-fade-up delay-200">
+            <h1 className="font-display text-5xl md:text-7xl font-semibold leading-[1.1] text-foreground mb-8 opacity-0-init animate-fade-up delay-200">
               Каждый праздник
               <br />
               <em className="italic font-light">заслуживает</em>
               <br />
               большего
             </h1>
-            <p className="text-base text-muted-foreground leading-relaxed mb-10 max-w-md opacity-0-init animate-fade-up delay-300">
+            <p className="text-lg text-foreground/75 leading-relaxed mb-10 max-w-md opacity-0-init animate-fade-up delay-300">
               Профессиональный фуршет для корпоративных мероприятий, свадеб и
               частных праздников. Авторское меню, безупречная сервировка,
               полное сопровождение.
@@ -184,10 +184,10 @@ export default function Index() {
               { num: "98%", label: "довольных клиентов" },
             ].map(({ num, label }) => (
               <div key={label}>
-                <div className="font-display text-3xl font-light text-foreground">
+                <div className="font-display text-3xl font-semibold text-foreground">
                   {num}
                 </div>
-                <div className="text-xs tracking-wider text-muted-foreground mt-1 uppercase">
+                <div className="text-sm tracking-wider text-foreground/65 mt-1 uppercase font-medium">
                   {label}
                 </div>
               </div>
@@ -219,10 +219,10 @@ export default function Index() {
             ].map(({ icon, title, desc }) => (
               <div key={title} className="flex flex-col items-center gap-4">
                 <div className="w-12 h-12 border border-border rounded-full flex items-center justify-center">
-                  <Icon name={icon as "ChefHat" | "Users" | "Truck"} size={20} className="text-muted-foreground" />
+                  <Icon name={icon as "ChefHat" | "Users" | "Truck"} size={20} className="text-foreground/70" />
                 </div>
-                <h3 className="font-display text-xl font-light">{title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                <h3 className="font-display text-xl font-semibold">{title}</h3>
+                <p className="text-base text-foreground/70 leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -233,10 +233,10 @@ export default function Index() {
       <section id="gallery" className="py-24">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-14">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">
+            <p className="text-sm tracking-[0.3em] uppercase text-foreground/65 font-medium mb-3">
               Наши работы
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-light">
+            <h2 className="font-display text-4xl md:text-5xl font-semibold">
               Галерея блюд
               <br />
               <em className="italic font-light">и сервировки</em>
@@ -268,7 +268,7 @@ export default function Index() {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="text-sm tracking-wider text-muted-foreground border-b border-muted-foreground pb-0.5 hover:text-foreground hover:border-foreground transition-colors duration-200">
+            <button className="text-sm tracking-wider text-foreground/65 border-b border-foreground/40 pb-0.5 font-medium hover:text-foreground hover:border-foreground transition-colors duration-200">
               Смотреть все фотографии
             </button>
           </div>
@@ -279,13 +279,13 @@ export default function Index() {
       <section id="prices" className="py-24 bg-secondary/30">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-14 text-center">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">
+            <p className="text-sm tracking-[0.3em] uppercase text-foreground/65 font-medium mb-3">
               Пакеты услуг
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-light">
+            <h2 className="font-display text-4xl md:text-5xl font-semibold">
               Прозрачные цены
             </h2>
-            <p className="mt-4 text-sm text-muted-foreground max-w-md mx-auto">
+            <p className="mt-4 text-base text-foreground/70 max-w-md mx-auto">
               Цена зависит от количества гостей и выбранного меню. Точный расчёт — бесплатно и без обязательств.
             </p>
           </div>
@@ -307,15 +307,15 @@ export default function Index() {
                 )}
                 <div className="mb-6">
                   <h3
-                    className={`font-display text-2xl font-light mb-1 ${
+                    className={`font-display text-2xl font-semibold mb-1 ${
                       plan.highlight ? "text-background" : "text-foreground"
                     }`}
                   >
                     {plan.name}
                   </h3>
                   <p
-                    className={`text-xs leading-relaxed ${
-                      plan.highlight ? "text-background/70" : "text-muted-foreground"
+                    className={`text-sm leading-relaxed ${
+                      plan.highlight ? "text-background/80" : "text-foreground/70"
                     }`}
                   >
                     {plan.description}
@@ -324,15 +324,15 @@ export default function Index() {
 
                 <div className="mb-8">
                   <div
-                    className={`font-display text-3xl font-light ${
+                    className={`font-display text-3xl font-semibold ${
                       plan.highlight ? "text-background" : "text-foreground"
                     }`}
                   >
                     {plan.price}
                   </div>
                   <div
-                    className={`text-xs tracking-wider mt-0.5 ${
-                      plan.highlight ? "text-background/60" : "text-muted-foreground"
+                    className={`text-sm tracking-wider mt-0.5 ${
+                      plan.highlight ? "text-background/70" : "text-foreground/65"
                     }`}
                   >
                     {plan.perPerson}
@@ -346,12 +346,12 @@ export default function Index() {
                         name="Check"
                         size={14}
                         className={`mt-0.5 shrink-0 ${
-                          plan.highlight ? "text-background/80" : "text-muted-foreground"
+                          plan.highlight ? "text-background/90" : "text-foreground/70"
                         }`}
                       />
                       <span
                         className={`text-sm leading-relaxed ${
-                          plan.highlight ? "text-background/85" : "text-foreground"
+                          plan.highlight ? "text-background/95" : "text-foreground"
                         }`}
                       >
                         {f}
@@ -373,7 +373,7 @@ export default function Index() {
             ))}
           </div>
 
-          <p className="mt-8 text-center text-xs text-muted-foreground">
+          <p className="mt-8 text-center text-sm text-foreground/65">
             Минимальный заказ — 20 персон. Выезд в Москве и Подмосковье.
           </p>
         </div>
@@ -382,15 +382,15 @@ export default function Index() {
       {/* CTA */}
       <section className="py-24 border-t border-border">
         <div className="max-w-2xl mx-auto px-6 text-center">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
+          <p className="text-sm tracking-[0.3em] uppercase text-foreground/65 font-medium mb-4">
             Готовы к сотрудничеству?
           </p>
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold mb-6">
             Обсудим ваш
             <br />
             <em className="italic">праздник</em>
           </h2>
-          <p className="text-sm text-muted-foreground mb-10 leading-relaxed">
+          <p className="text-base text-foreground/70 mb-10 leading-relaxed">
             Оставьте заявку — свяжемся в течение часа, обсудим детали и рассчитаем стоимость бесплатно.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
@@ -412,7 +412,7 @@ export default function Index() {
           <span className="font-display text-lg font-light tracking-widest uppercase text-foreground">
             Буфет
           </span>
-          <div className="flex items-center gap-6 text-xs text-muted-foreground tracking-wider">
+          <div className="flex items-center gap-6 text-sm text-foreground/65 tracking-wider">
             <span>+7 (495) 000-00-00</span>
             <span>info@furshet.ru</span>
             <span>© 2026</span>
