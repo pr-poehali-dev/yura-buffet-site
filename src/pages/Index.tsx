@@ -163,7 +163,7 @@ export default function Index() {
               большего
             </h1>
             <p className="text-lg text-white/80 leading-relaxed mb-10 max-w-md opacity-0-init animate-fade-up delay-300">
-              Фуршет для корпоративных мероприятий, свадеб и
+              Фуршет для корпоративных мероприятий и
               частных праздников. Авторское меню, безупречная сервировка.
             </p>
             <div className="flex flex-wrap gap-4 opacity-0-init animate-fade-up delay-400">
